@@ -9,7 +9,7 @@ import (
 
 	"github.com/hashicorp/terraform-plugin-framework/providerserver"
 
-	"github.com/remarkable/terraform-wif-data-provider/internal/data"
+	"github.com/remarkable/terraform-provider-wif-data/internal/data"
 )
 
 var version string = "dev"
@@ -20,7 +20,7 @@ func main() {
 	flag.BoolVar(&debug, "debug", false, "set to true to run the provider with support for debuggers like delve")
 	flag.Parse()
 	opts := providerserver.ServeOpts{
-		Address: "registry.terraform.io/remarkable/terraform-wif-data-provider",
+		Address: "registry.terraform.io/remarkable/terraform-provider-wif-data",
 		Debug:   debug,
 	}
 	err := providerserver.Serve(context.Background(), data.New(version), opts)

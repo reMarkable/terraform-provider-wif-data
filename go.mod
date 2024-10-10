@@ -1,4 +1,4 @@
-module github.com/remarkable/terraform-wif-data-provider
+module github.com/remarkable/terraform-provider-wif-data
 
 go 1.22.5
 
