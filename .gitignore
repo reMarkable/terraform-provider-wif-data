@@ -1,1 +1,4 @@
 terraform-wif-data-provider
+terraform-provider-wif-data
+dist
+.task
