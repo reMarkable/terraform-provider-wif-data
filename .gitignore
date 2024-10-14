@@ -2,3 +2,12 @@ terraform-wif-data-provider
 terraform-provider-wif-data
 dist
 .task
+# Devenv
+.devenv*
+devenv.local.nix
+
+# direnv
+.direnv
+
+# pre-commit
+.pre-commit-config.yaml
