@@ -16,8 +16,8 @@ func TestWifPrincipalSetDataSource(t *testing.T) {
 				Config: testWifPrincipalSetDataSourceConfig,
 				Check: resource.ComposeAggregateTestCheckFunc(
 					resource.TestCheckResourceAttr("data.wif_principal_set.actions", "id", "wif_principal_set:repo:assertion.arn.contains(\":instance-profile/Production\")"),
-					resource.TestCheckResourceAttr("data.wif_principal_set.actions", "url", "principalSet://iam.googleapis.com/projects/1976/locations/global/workloadIdentityPools/mypool/repo/assertion.arn.contains(\":instance-profile/Production\")"),
-					resource.TestCheckResourceAttr("data.wif_principal_set.mygroup", "url", "principalSet://iam.googleapis.com/projects/1976/locations/global/workloadIdentityPools/mypool/attribute.group/mygroup"),
+					resource.TestCheckResourceAttr("data.wif_principal_set.actions", "url", "principalSet://iam.googleapis.com/projects/244128534539/locations/global/workloadIdentityPools/mypool/repo/assertion.arn.contains(\":instance-profile/Production\")"),
+					resource.TestCheckResourceAttr("data.wif_principal_set.mygroup", "url", "principalSet://iam.googleapis.com/projects/244128534539/locations/global/workloadIdentityPools/mypool/attribute.group/mygroup"),
 				),
 			},
 		},
@@ -26,7 +26,7 @@ func TestWifPrincipalSetDataSource(t *testing.T) {
 
 const testWifPrincipalSetDataSourceConfig = `
 provider "wif" {
-  project_id = 1976
+  project_id = 244128534539
   pool_id = "mypool"
 }
 data "wif_principal_set" "actions" {

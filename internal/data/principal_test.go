@@ -16,7 +16,7 @@ func TestWifPrincipalDataSource(t *testing.T) {
 				Config: testWifPrincipalDataSourceConfig,
 				Check: resource.ComposeAggregateTestCheckFunc(
 					resource.TestCheckResourceAttr("data.wif_principal.actions", "id", "wif_principal:repo:reMarkable/actions"),
-					resource.TestCheckResourceAttr("data.wif_principal.actions", "url", "principal://iam.googleapis.com/projects/1976/locations/global/workloadIdentityPools/pool/subject/repo:reMarkable/actions"),
+					resource.TestCheckResourceAttr("data.wif_principal.actions", "url", "principal://iam.googleapis.com/projects/244128534539/locations/global/workloadIdentityPools/pool/subject/repo:reMarkable/actions"),
 				),
 			},
 		},
@@ -25,7 +25,7 @@ func TestWifPrincipalDataSource(t *testing.T) {
 
 const testWifPrincipalDataSourceConfig = `
 provider "wif" {
-  project_id = 1976
+  project_id = 244128534539
   pool_id = "pool"
 }
 data "wif_principal" "actions" {

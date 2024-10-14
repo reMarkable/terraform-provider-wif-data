@@ -28,7 +28,7 @@ type WifDataProvider struct {
 }
 type WifDataProviderModel struct {
 	PoolId    types.String `tfsdk:"pool_id"`
-	ProjectId types.Int32  `tfsdk:"project_id"`
+	ProjectId types.Int64  `tfsdk:"project_id"`
 }
 
 func (p *WifDataProvider) Metadata(ctx context.Context, req provider.MetadataRequest, resp *provider.MetadataResponse) {
