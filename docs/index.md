@@ -3,12 +3,15 @@
 page_title: "wif-data Provider"
 subcategory: ""
 description: |-
-  
+  A utility data source for generating principal and principalset URLs.
+  This is primarily used to provide IAM permissions directly to an external entity.
 ---
 
 # wif-data Provider
 
+A utility data source for generating principal and principalset URLs.
 
+    This is primarily used to provide IAM permissions directly to an external entity.
 
 
 
